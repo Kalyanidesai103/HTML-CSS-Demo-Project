@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee shop </title>
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #6B4F4F;
+            padding: 10px 0;
+            text-align:end;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            z-index: 10;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #C2B280;
+        }
+
+       .heding{
+        color:#f0e1b1;
+       position:absolute;
+       bottom: 200px;
+       left: 150px;
+       padding: 100px;
+       border-radius: 500px;
+       font-size: large;
+       
+    }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #6B4F4F;
+        }
+
+        /* About Section */
+        .about p {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-top:5px;
+        }
+
+        /* Menu Section */
+        .menu-items {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            background-color: rgb(161, 147, 128);
+        }
+
+        .menu-item {
+            width: 200px;
+        }
+
+        .menu-item h3 {
+            color: #6B4F4F;
+        }
+
+        .menu-item p {
+            font-size: 1.1rem;
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        .contact p {
+            text-align: center;
+            font-size: 1.2rem;
+            background-color: #ad9f9f;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #6B4F4F;
+            text-align: center;
+            padding: 10px 0;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Coffee Cup</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <img src="https://png.pngtree.com/thumb_back/fw800/background/20240312/pngtree-cup-of-coffee-on-table-with-a-restaurant-background-and-nice-image_15640858.jpg"
+        width="100%" height="500px">
+        <div class="heding">
+        <h1> Morning Fuel </h1>
+        <h3> A cup of coffee<br> To lift your spirits and warm your soul. </h3>
+    </div>
+
+    <!-- About Section -->
+    <img src="https://previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1409/wavebreakmediamicro140906148/31347025-barista-hermoso-que-ofrece-una-taza-de-caf%C3%A9-en-la-cafeter%C3%ADa.jpg" height="400px" width="70%">
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Coffee Cup, the perfect place to enjoy a cup of freshly brewed coffee. Our coffee is sourced
+                from the finest beans around the world and brewed to perfection.</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>$3.00</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Latte</h3>
+                    <p>$4.50</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>$4.00</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Mocha</h3>
+                    <p>$5.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="https://m.media-amazon.com/images/I/61n-QGNfT1L.jpg" alt="Coffee Image 1">
+                <img src="https://skyborn.in/cdn/shop/products/COFFEEMUGCAPPUCCINO_LATTE_BIGTEACUP.CRYSTALCLEARGLASSCUPS_ESPRESSOCOFFEEGIFTSPACKOF_8_-220ML_700x.webp?v=1674042566"
+                    alt="Coffee Image 2">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20220222/pngtree-pouring-coffee-into-an-almost-full-cup-simple-coffee-strong-photo-image_5033034.jpg"
+                    alt="Coffee Image 3">
+                <img src="https://media.istockphoto.com/id/1496859162/photo/coffee-cup-latte-art-on-wooden-table-cafe-menu.webp?b=1&s=612x612&w=0&k=20&c=4AEknyzAZUhnW5tLVEhNimk_fO3fjaYYumU0mW3iKqc="
+                    alt="Coffee Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: info@coffeeCup.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <p>Address: 123 Coffee St, Brewtown</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Coffee Cup. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
